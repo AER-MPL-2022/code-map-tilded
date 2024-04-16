@@ -8,9 +8,10 @@ class Map:
         self.layers = list()
 
 class Layer:
-    def __init__(self, width, height, data):
+    def __init__(self, width, height, name, data):
         self.size = (width, height)
         self.data = data
+        self.name = name
 
     def get_layer_data(self, f, map):
         for y in range(map.size[1]):
